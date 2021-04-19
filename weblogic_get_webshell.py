@@ -30,6 +30,9 @@ def get_all_url(filename):
     return url_list
 
 def weblogic_10_3_6(url,cmd):
+    proxies = {
+    'http': 'http://127.0.0.1:8080',
+    'https': 'https://127.0.0.1:8080'}
     headers = {
     "Accept-Language":"zh-CN,zh;q=0.9,en;q=0.8",
     "User-Agent":"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50", 
@@ -48,6 +51,9 @@ def weblogic_10_3_6(url,cmd):
         pass
 
 def weblogic_12_1_3(url,cmd):
+    proxies = {
+    'http': 'http://127.0.0.1:8080',
+    'https': 'https://127.0.0.1:8080'}
     headers = {
     "Accept-Language":"zh-CN,zh;q=0.9,en;q=0.8",
     "User-Agent":"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_8; en-us) AppleWebKit/534.50 (KHTML, like Gecko) Version/5.1 Safari/534.50", 
